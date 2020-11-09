@@ -6,7 +6,8 @@ import { Provider } from 'react-redux';
 import './index.css';
 
 const initialState = {
-  sum: 0
+  sum: 0,
+  dices: []
 };
 
 function reducer(state = initialState, action) {

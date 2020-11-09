@@ -18,10 +18,9 @@ class App extends React.Component {
 
   diceDecrement() {
     const tmp = [...this.state.diceArray];
-    const last = tmp[tmp.length - 1];
     console.log(tmp);
     tmp.splice(-1);
-    this.props.dispatch({ type: 'REMOVE', diff: last });
+    this.props.dispatch({ type: 'REMOVE', diff: tmp[tmp.length - 1] });
     this.setState({
       diceArray: tmp
     });
